@@ -6,7 +6,9 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.core.widget.doOnTextChanged
 import androidx.fragment.app.Fragment
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.bignerdranch.android.criminalintent.databinding.FragmentCrimeDetailBinding
+import com.bignerdranch.android.criminalintent.databinding.FragmentCrimeListBinding
 import java.util.Date
 import java.util.UUID
 
@@ -37,6 +39,7 @@ class CrimeDetailFragment : Fragment()
         savedInstanceState: Bundle?
     ): View? {
         _binding = FragmentCrimeDetailBinding.inflate(layoutInflater, container, false)
+
         return binding.root
     }
 
